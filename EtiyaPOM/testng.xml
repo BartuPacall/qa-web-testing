@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="tests.TestNGListener"/>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+        <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Bartu/IdeaProjects/EtiyaPOM">
+        <classes>
+            <class name="tests.ChildTest">
+                <methods>
+                    <include name="testAbout"/>
+                    <include name="testProducts"/>
+                    <include name="testSolutions"/>
+                    <include name="testServices"/>
+                    <include name="testBlog"/>
+                    <include name="testNewsMediaLink"/>
+                    <include name="testCareer"/>
+                    <include name="testContactUs"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
